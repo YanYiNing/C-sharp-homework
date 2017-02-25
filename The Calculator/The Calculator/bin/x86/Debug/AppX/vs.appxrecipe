@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Workspace\Visual Studio 2017\Projects\The Calculator\The Calculator\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-25T13:54:55.593</Modified>
+      <Modified>2017-02-25T14:17:39.830</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Workspace\Visual Studio 2017\Projects\The Calculator\The Calculator\bin\x86\Debug\The Calculator.exe">
       <PackagePath>entrypoint\The Calculator.exe</PackagePath>
-      <Modified>2017-02-25T13:54:55.346</Modified>
+      <Modified>2017-02-25T14:17:39.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\YanYiNing\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -545,7 +545,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Workspace\Visual Studio 2017\Projects\The Calculator\The Calculator\bin\x86\Debug\Core\The Calculator.exe">
       <PackagePath>The Calculator.exe</PackagePath>
-      <Modified>2017-02-25T13:54:55.591</Modified>
+      <Modified>2017-02-25T14:17:39.820</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

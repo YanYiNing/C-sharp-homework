@@ -24,15 +24,14 @@ namespace The_Calculator
     public sealed partial class MainPage : Page
     {
         private string str;
-        private List<double> value_list = new List<double>();//存用户输入的数字
-        private List<int> operator_list = new List<int>();//存用户输入的运算符，定义+为0，-为1，×为2，÷为3
-                                                          //状态记录
-        private bool add_flag = false;//+按下
-        private bool minus_flag = false;//-按下
-        private bool multi_flag = false;//×按下
-        private bool div_flag = false;//÷按下
-        private bool result_flag = false;//=按下
-        private bool can_operate_flag = false;//按下=是否响应
+        private List<double> value_list = new List<double>();
+        private List<int> operator_list = new List<int>();
+        private bool add_flag = false;
+        private bool minus_flag = false;
+        private bool multi_flag = false;
+        private bool div_flag = false;
+        private bool result_flag = false;
+        private bool can_operate_flag = false;
 
         public MainPage()
         {
@@ -44,11 +43,11 @@ namespace The_Calculator
         {
             if (add_flag || minus_flag || multi_flag || div_flag || result_flag)
             {
-                if (result_flag)//按下等号，刚刚算完一个运算的状态
+                if (result_flag)
                 {
                     ResultText.Text = "";
                 }
-                InputText.Text = "";//如果用户刚刚输入完一个运算符
+                InputText.Text = "";
                 add_flag = false;
                 minus_flag = false;
                 multi_flag = false;
@@ -57,7 +56,6 @@ namespace The_Calculator
             }
             if ((num.Equals(".") && ResultText.Text.IndexOf(".") < 0) || !num.Equals("."))
             {
-                //如果用户输入的是小数点.，则要判断当前已输入的数字中是否含有小数点.才允许输入
                 InputText.Text += num;
                 ResultText.Text += num;
                 can_operate_flag = true;
@@ -133,14 +131,14 @@ namespace The_Calculator
 
         private void Button_Click_Add(object sender, RoutedEventArgs e)
         {
-            if (!add_flag)//防止用户多次输入一个符号键，符号键只允许输入一次
+            if (!add_flag)
             {
                 result_flag = false;
-                value_list.Add(double.Parse(InputText.Text));//将当前已输入的数字放入value_list
+                value_list.Add(double.Parse(InputText.Text));
                 operator_list.Add(0);
                 ResultText.Text += "+";
                 add_flag = true;
-                can_operate_flag = false;//刚刚输入完符号，不能构成一条正常的表达式，如111+，设置为不可运行状态
+                can_operate_flag = false;
             }
         }
 
@@ -161,12 +159,12 @@ namespace The_Calculator
         private void Button_Click_Result(object sender, RoutedEventArgs e)
         {
             if (value_list.Count > 0 && operator_list.Count > 0 && can_operate_flag)
-            {//需要防止用户没输入数字，或者只输入了一个数，就按=。
+            {
                 value_list.Add(double.Parse(InputText.Text));
                 double total = value_list[0];
                 for (int i = 0; i < operator_list.Count; i++)
                 {
-                    int _operator = operator_list[i];//operator是C#的运算符重载的关键字，前面加个_来区别
+                    int _operator = operator_list[i];
                     switch (_operator)
                     {
                         case 0:
