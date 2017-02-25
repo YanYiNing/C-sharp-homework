@@ -53,6 +53,10 @@ namespace Search
             BookList.ItemsSource = list;
         }//添加搜索按钮的事件
 
+        private void Search_AccessKeyDisplayDismissed(UIElement sender, AccessKeyDisplayDismissedEventArgs args)
+        {
+
+        }
     }
 
     class Book
