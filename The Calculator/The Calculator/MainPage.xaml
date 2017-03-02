@@ -1,0 +1,273 @@
+﻿<Page
+    x:Class="The_Calculator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:The_Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+	<Grid Background="{ThemeResource AppBarBackground}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="7"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="1*"/>
+			<ColumnDefinition Width="7"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="7"/>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="3*"/>
+			<RowDefinition Height="7"/>
+			<RowDefinition Height="4*"/>
+			<RowDefinition Height="4*"/>
+			<RowDefinition Height="4*"/>
+			<RowDefinition Height="4*"/>
+			<RowDefinition Height="4*"/>
+			<RowDefinition Height="7"/>
+		</Grid.RowDefinitions>
+
+		<Button 
+			Content="1" Click="Button_Click_1"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="5" Grid.Column="1"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="2" Click="Button_Click_2"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="5" Grid.Column="2"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" Holding="Button_Click_Clean_All" 
+			/>
+
+		<Button 
+			Content="3" Click="Button_Click_3"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="5" Grid.Column="3"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="4" Click="Button_Click_4"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="6" Grid.Column="1"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="5" Click="Button_Click_5"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="6" Grid.Column="2"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="6" Click="Button_Click_6"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="6" Grid.Column="3"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="7" Click="Button_Click_7"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="7" Grid.Column="1"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="8" Click="Button_Click_8"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="7" Grid.Column="2"
+			Margin="3.333,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="9" Click="Button_Click_9"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="7" Grid.Column="3"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="(" Click="Button_Click_Left_parenthesis"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="4" Grid.Column="1"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content=")" Click="Button_Click_Right_parenthesis"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="4" Grid.Column="2"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+		
+		<Button 
+			Content="x" Click="Button_Click_Multiply"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="4" Grid.Column="4"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="/" Click="Button_Click_Divide"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="5" Grid.Column="4"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="←" Click="Button_Click_Delete"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="4" Grid.Column="3"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXingkai" FontWeight="Bold" 
+			/>
+
+		<Button 
+			Content="+" Click="Button_Click_Add"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="6" Grid.Column="4"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="-" Click="Button_Click_Subtract"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="7" Grid.Column="4"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="=" Click="Button_Click_Result"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="8" Grid.Column="4"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="C" Click="Button_Click_Clean_All"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="8" Grid.Column="1"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="0" Click="Button_Click_0"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="8" Grid.Column="2"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+		<Button 
+			Content="." Click="Button_Click_Point"
+			HorizontalAlignment="Stretch" 
+			Grid.Row="8" Grid.Column="3"
+			Margin="3.3,3,3,3"
+			Height="Auto" Width="Auto" 
+			Grid.ColumnSpan="1"
+			Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" 
+			VerticalAlignment="Stretch" FontSize="60" FontFamily="STXihei" 
+			/>
+
+
+		
+
+		<TextBlock Grid.ColumnSpan="4" Grid.Column="1" Grid.Row="1" 
+				 TextWrapping="Wrap" Text="TextBox" 
+				 FontSize="20" FontFamily="STXihei"
+				 />
+
+		<TextBox Grid.ColumnSpan="4" Grid.Column="1" Grid.Row="2" 
+				 x:Name="numberText"
+				 TextWrapping="Wrap"  
+				 FontSize="60" FontFamily="STXihei"
+				 Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" TextAlignment="Right"/>
+
+		<TextBox Grid.ColumnSpan="4" Grid.Column="1" Grid.Row="1" 
+				 x:Name="expressionText"
+				 TextWrapping="Wrap"  
+				 FontSize="20" FontFamily="STXihei"
+				 Background="{ThemeResource AppBarToggleButtonCheckedForegroundThemeBrush}" TextAlignment="Right"/>
+
+	</Grid>
+</Page>

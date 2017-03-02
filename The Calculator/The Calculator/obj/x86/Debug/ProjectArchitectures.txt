@@ -1,0 +1,1 @@
+D:\Workspace\Visual Studio 2017\Projects\The Calculator\The Calculator\The Calculator.csproj;x86
